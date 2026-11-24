@@ -1,3 +1,4 @@
+/* Color Variables - Classic Boy Blue Palette */
 :root {
   --navy-primary: #1e3a8a;
   --royal-accent: #2563eb;
@@ -38,6 +39,7 @@ body {
 }
 
 
+/* Top Header Banner */
 .juan-header-card {
   position: relative;
   background-color: var(--header-bg);
@@ -62,12 +64,20 @@ body {
   flex-shrink: 0;
 }
 
-.juan-avatar-circle img {
-  width: 200%;
-  height: 200%;
-  object-fit: cover;
-  margin-left: -56px
 
+.juan-avatar-circle i {
+  font-size: 98px;
+  color: var(--navy-primary);
+  transform: translateY(10px);
+}
+
+
+.juan-avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
 }
 
 
@@ -141,6 +151,7 @@ body {
 }
 
 
+/* Two-Column Grid Layout */
 .juan-main-grid {
   display: grid;
   grid-template-columns: 1fr 1.25fr;
@@ -156,6 +167,7 @@ body {
 }
 
 
+/* Reusable Card Styling */
 .juan-card {
   border: 2.5px solid var(--navy-primary);
   border-radius: 20px;
@@ -207,6 +219,7 @@ body {
 }
 
 
+/* Lined Text Rows */
 .juan-text-row {
   display: flex;
   align-items: center;
@@ -241,6 +254,7 @@ body {
 }
 
 
+/* Interests Icon Row - Gaming & Billiard */
 .juan-interests-icons {
   flex-direction: row;
   justify-content: space-evenly;
@@ -262,6 +276,7 @@ body {
 }
 
 
+/* Responsive Adjustment for Mobile */
 @media (max-width: 650px) {
   .juan-main-grid {
     grid-template-columns: 1fr;
